@@ -2,7 +2,6 @@ body {
 	background-color: #E5E5E5;
 	display: flex;
 	justify-content: center;
-	margin-top: 520px;
 }
 
 h1, h2, h3 {
@@ -31,18 +30,34 @@ h1 {
 	margin-top: 28px;
 }
 
-.img-container {
+.rating {
 	display: flex;
-	gap: 14px;
 	list-style-type: none;
 	padding: 0;
 	margin-top: 40px;
+	gap: 10px;
 }
 
-.img-star-list {
-	width: 66px;
-	height: 66px;
-	display: block;
+.icon-star {
+	font-size: 50px;
+	cursor: pointer;
+	color: orange;
+	margin: 0;
+}
+
+.icon-star:before {
+	margin: 0 !important;
+}
+
+.icon-star-empty:before {
+	margin: 0 !important;
+}
+
+.icon-star-empty {
+	font-size: 50px;
+	cursor: pointer;
+	color: orange;
+	fill: orange;
 }
 
 .input-container {
@@ -72,6 +87,7 @@ h1 {
 	height: 40px;
 	right: 36px;
 	top: 70px;
+	cursor: pointer;
 }
 
 .input-container input::placeholder {
